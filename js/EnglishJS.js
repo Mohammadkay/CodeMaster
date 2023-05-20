@@ -4,237 +4,100 @@ import { arr } from "./Register.js";
 export function que() {
   const questions = [
     {
-      question: "What is the capital of France?",
-      choice1: "Paris",
-      choice2: "Madrid",
-      choice3: "London",
-      choice4: "Amsterdam",
-      correct: "Paris"
-    },
-    {
-      question: "Which planet is known as the Red Planet?",
-      choice1: "Mars",
-      choice2: "Jupiter",
-      choice3: "Venus",
-      choice4: "Earth",
-      correct: "Mars"
-    },
-    {
-      question: "What is the largest ocean on Earth?",
-      choice1: "Atlantic Ocean",
-      choice2: "Indian Ocean",
-      choice3: "Pacific Ocean",
-      choice4: "Dead See",
-      correct: "Pacific Ocean"
-    },
-    {
-      question: "Who painted the Mona Lisa?",
-      choice1: "Vincent van Gogh",
-      choice2: "Leonardo da Vinci",
-      choice3: "Pablo Picasso",
-      choice4: "johnson statham",
-      correct: "Leonardo da Vinci"
-    },
-    {
-      question: "What is the chemical symbol for gold?",
-      choice1: "Au",
-      choice2: "Ag",
-      choice3: "Hg",
-      choice4: "S",
-      correct: "Au"
-    },
-    {
-      question: "Which country is known for inventing the game of cricket?",
-      choice1: "India",
-      choice2: "Australia",
-      choice3: "England",
-      choice4: "Bakistan",
-      correct: "England"
-    },
-    {
-      question: "Who wrote the play 'Romeo and Juliet'?",
-      choice1: "William Shakespeare",
-      choice2: "George Orwell",
-      choice3: "J.K. Rowling",
-      choice4: "Ahmad Alshobaki",
-      correct: "William Shakespeare"
-    },
-    {
-      question: "Which animal is known as the 'king of the jungle'?",
-      choice1: "Elephant",
-      choice2: "Lion",
-      choice3: "Giraffe",
-      choice4: "Tiger",
-      correct: "Lion"
-    },
-    {
-      question: "What is the largest planet in our solar system?",
-      choice1: "Jupiter",
-      choice2: "Saturn",
-      choice3: "Neptune",
-      choice4: "Earth",
-      correct: "Jupiter"
-    },
-    {
-      question: "Who painted the ceiling of the Sistine Chapel?",
-      choice1: "Michelangelo",
-      choice2: "Pablo Picasso",
-      choice3: "Claude Monet",
-      choice4: "Laith Alzbaidy",
-      correct: "Michelangelo"
-    },
-    {
-      question: "Which country is home to the kangaroo?",
-      choice1: "Australia",
-      choice2: "Brazil",
-      choice3: "Mexico",
-      choice4: "Canada",
-      correct: "Australia"
-    },
-    {
-      question: "What is the symbol for the chemical element oxygen?",
-      choice1: "O",
-      choice2: "O2",
-      choice3: "H2O",
-      choice4: "N",
-      correct: "O"
-    },
-    {
-      question: "Who invented the telephone?",
-      choice1: "Thomas Edison",
-      choice2: "Alexander Graham Bell",
-      choice3: "Albert Einstein",
-      choice4: "Androw Alex",
-      correct: "Alexander Graham Bell"
-    },
-    {
-      question: "What is the tallest mountain in the world?",
-      choice1: "Mount Kilimanjaro",
-      choice2: "Mount Everest",
-      choice3: "Mount Fuji",
-      choice4: "Mount Nebo",
-      correct: "Mount Everest"
-    },
-    {
-      question: "Which artist painted the famous artwork 'Starry Night'?",
-      choice1: "Vincent van Gogh",
-      choice2: "Salvador Dali",
-      choice3: "Pablo Picasso",
-      choice4: "Pablo oscobar",
-      correct: "Vincent van Gogh"
-    },
-    // -------------------------
-    {
-      question: "Which of the following is a verb?",
-      choice1: "House",
-      choice2: "Run",
-      choice3: "Blue",
-      choice4: "Table",
-      correct: "Run"
-    },
-    {
-      question: "What is the correct spelling?",
-      choice1: "Neccessary",
-      choice2: "Necessery",
-      choice3: "Necessary",
-      choice4: "Neccesary",
-      correct: "Necessary"
-    },
-    {
-      question: "Choose the synonym for 'happy':",
-      choice1: "Sad",
-      choice2: "Angry",
-      choice3: "Joyful",
-      choice4: "Tired",
-      correct: "Joyful"
+      question: "Choose the correct form of the verb to complete the sentence: 'She _____ to the store yesterday.'",
+      choice1: "go",
+      choice2: "goes",
+      choice3: "went",
+      choice4: "gone",
+      correct: "went"
     },
     {
       question: "Identify the correct sentence:",
-      choice1: "She don't like apples",
-      choice2: "He doesn't likes apples",
-      choice3: "They doesn't like apples",
-      choice4: "I don't like apples",
-      correct: "I don't like apples"
+      choice1: "I am going to the movies tomorrow.",
+      choice2: "Me is going to the movies tomorrow.",
+      choice3: "Myself is going to the movies tomorrow.",
+      choice4: "I are going to the movies tomorrow.",
+      correct: "I am going to the movies tomorrow."
     },
     {
-      question: "What is the plural form of 'child'?",
-      choice1: "Childs",
-      choice2: "Childen",
-      choice3: "Children",
-      choice4: "Childies",
-      correct: "Children"
-    },
-    {
-      question: "Select the antonym of 'cold':",
-      choice1: "Hot",
-      choice2: "Warm",
-      choice3: "Freezing",
-      choice4: "Chilly",
-      correct: "Hot"
-    },
-    {
-      question: "Which word is a conjunction?",
-      choice1: "But",
-      choice2: "Beautiful",
-      choice3: "Quickly",
-      choice4: "Table",
-      correct: "But"
-    },
-    {
-      question: "What is the superlative form of 'good'?",
-      choice1: "Gooder",
-      choice2: "Better",
-      choice3: "Best",
-      choice4: "Goodest",
-      correct: "Best"
+      question: "What is the comparative form of the adjective 'good'?",
+      choice1: "gooder",
+      choice2: "better",
+      choice3: "best",
+      choice4: "goodest",
+      correct: "better"
     },
     {
       question: "Choose the correct possessive pronoun:",
-      choice1: "Me's",
-      choice2: "Yours",
-      choice3: "Their",
-      choice4: "She",
-      correct: "Yours"
+      choice1: "me's",
+      choice2: "yours",
+      choice3: "their",
+      choice4: "she",
+      correct: "yours"
     },
     {
-      question: "Identify the adverb in the sentence: 'She sings beautifully.'",
-      choice1: "Sings",
-      choice2: "Beautifully",
-      choice3: "She",
-      choice4: "The",
-      correct: "Beautifully"
-    },
-    {
-      question: "What is the past tense of 'go'?",
-      choice1: "Gone",
-      choice2: "Went",
-      choice3: "Goed",
-      choice4: "Going",
-      correct: "Went"
+      question: "What is the plural form of the noun 'child'?",
+      choice1: "childs",
+      choice2: "childen",
+      choice3: "children",
+      choice4: "childies",
+      correct: "children"
     },
     {
       question: "Select the correct sentence:",
-      choice1: "We was studying for the test",
-      choice2: "They is going to the park",
-      choice3: "She am a doctor",
-      choice4: "He is playing soccer",
-      correct: "He is playing soccer"
+      choice1: "He don't like ice cream.",
+      choice2: "He doesn't likes ice cream.",
+      choice3: "He doesn't like ice cream.",
+      choice4: "He don't likes ice cream.",
+      correct: "He doesn't like ice cream."
     },
     {
-      question: "Choose the synonym for 'big':",
-      choice1: "Large",
-      choice2: "Small",
-      choice3: "Tiny",
-      choice4: "Huge",
-      correct: "Large"
+      question: "Choose the synonym for 'happy':",
+      choice1: "sad",
+      choice2: "angry",
+      choice3: "joyful",
+      choice4: "tired",
+      correct: "joyful"
     },
     {
-      question: "What is the comparative form of 'happy'?",
-      choice1: "Happier",
-      choice2: "More happy",
-      choice3: "Happyer",
-      choice4: "Most happy",
-      correct: "Happier"
+      question: "Identify the adverb in the sentence: 'She sings beautifully.'",
+      choice1: "sings",
+      choice2: "beautifully",
+      choice3: "she",
+      choice4: "the",
+      correct: "beautifully"
+    },
+    {
+      question: "What is the past tense of the verb 'go'?",
+      choice1: "goed",
+      choice2: "went",
+      choice3: "gone",
+      choice4: "going",
+      correct: "went"
+    },
+    {
+      question: "Choose the correct sentence:",
+      choice1: "They is going to the park.",
+      choice2: "They are going to the park.",
+      choice3: "They am going to the park.",
+      choice4: "They be going to the park.",
+      correct: "They are going to the park."
+    },
+    {
+      question: "Choose the antonym for the word 'small':",
+      choice1: "big",
+      choice2: "tiny",
+      choice3: "little",
+      choice4: "huge",
+      correct: "big"
+    },
+    {
+      question: "What is the comparative form of the adjective 'happy'?",
+      choice1: "happyer",
+      choice2: "more happy",
+      choice3: "happier",
+      choice4: "most happy",
+      correct: "happier"
     },
     {
       question: "Choose the correct spelling:",
@@ -243,8 +106,185 @@ export function que() {
       choice3: "occasion",
       choice4: "occaision",
       correct: "occasion"
+    },
+    {
+      question: "Identify the correct form of the verb to complete the sentence: 'They _____ to the beach every summer.'",
+      choice1: "go",
+      choice2: "goes",
+      choice3: "went",
+      choice4: "gone",
+      correct: "go"
+    },
+    {
+      question: "What is the superlative form of the adjective 'good'?",
+      choice1: "gooder",
+      choice2: "better",
+      choice3: "best",
+      choice4: "goodest",
+      correct: "best"
+    },
+    {
+      question: "Choose the correct pronoun to complete the sentence: '_____ is my best friend.'",
+      choice1: "Me",
+      choice2: "I",
+      choice3: "My",
+      choice4: "Mine",
+      correct: "She"
+    },
+    {
+      question: "What is the plural form of the noun 'mouse'?",
+      choice1: "mouses",
+      choice2: "mices",
+      choice3: "mouse",
+      choice4: "mice",
+      correct: "mice"
+    },
+    {
+      question: "Select the correct sentence:",
+      choice1: "He don't have a car.",
+      choice2: "He doesn't have a car.",
+      choice3: "He don't has a car.",
+      choice4: "He doesn't has a car.",
+      correct: "He doesn't have a car."
+    },
+    {
+      question: "Choose the synonym for 'angry':",
+      choice1: "happy",
+      choice2: "sad",
+      choice3: "mad",
+      choice4: "tired",
+      correct: "mad"
+    },
+    {
+      question: "Identify the adverb in the sentence: 'They quickly ran to catch the bus.'",
+      choice1: "quickly",
+      choice2: "ran",
+      choice3: "they",
+      choice4: "catch",
+      correct: "quickly"
+    },
+    {
+      question: "What is the past tense of the verb 'eat'?",
+      choice1: "ate",
+      choice2: "eaten",
+      choice3: "eat",
+      choice4: "eating",
+      correct: "ate"
+    },
+    {
+      question: "Choose the correct sentence:",
+      choice1: "You is my best friend.",
+      choice2: "You are my best friend.",
+      choice3: "You am my best friend.",
+      choice4: "You be my best friend.",
+      correct: "You are my best friend."
+    },
+    {
+      question: "Choose the antonym for the word 'hot':",
+      choice1: "warm",
+      choice2: "cold",
+      choice3: "cool",
+      choice4: "chilly",
+      correct: "cold"
+    },
+    {
+      question: "What is the comparative form of the adjective 'small'?",
+      choice1: "smaller",
+      choice2: "more small",
+      choice3: "smallest",
+      choice4: "most small",
+      correct: "smaller"
+    },
+    {
+      question: "Choose the correct spelling:",
+      choice1: "apparant",
+      choice2: "apperrant",
+      choice3: "aparant",
+      choice4: "apparent",
+      correct: "apparent"
+    },
+    {
+      question: "Identify the correct form of the verb to complete the sentence: 'He _____ soccer every weekend.'",
+      choice1: "play",
+      choice2: "plays",
+      choice3: "played",
+      choice4: "playing",
+      correct: "plays"
+    },
+    {
+      question: "What is the superlative form of the adjective 'happy'?",
+      choice1: "happyer",
+      choice2: "more happy",
+      choice3: "happiest",
+      choice4: "most happy",
+      correct: "happiest"
+    },
+    {
+      question: "Choose the correct pronoun to complete the sentence: '_____ is going to the party.'",
+      choice1: "Me",
+      choice2: "I",
+      choice3: "My",
+      choice4: "Mine",
+      correct: "I"
+    },
+    {
+      question: "What is the plural form of the noun 'child'?",
+      choice1: "childs",
+      choice2: "childen",
+      choice3: "children",
+      choice4: "childies",
+      correct: "children"
+    },
+    {
+      question: "Select the correct sentence:",
+      choice1: "She don't like chocolate.",
+      choice2: "She doesn't likes chocolate.",
+      choice3: "She doesn't like chocolate.",
+      choice4: "She don't likes chocolate.",
+      correct: "She doesn't like chocolate."
+    },
+    {
+      question: "Choose the synonym for 'sad':",
+      choice1: "happy",
+      choice2: "angry",
+      choice3: "joyful",
+      choice4: "miserable",
+      correct: "miserable"
+    },
+    {
+      question: "Identify the adverb in the sentence: 'He sings loudly.'",
+      choice1: "sings",
+      choice2: "loudly",
+      choice3: "he",
+      choice4: "the",
+      correct: "loudly"
+    },
+    {
+      question: "What is the past tense of the verb 'run'?",
+      choice1: "runned",
+      choice2: "run",
+      choice3: "ran",
+      choice4: "running",
+      correct: "ran"
+    },
+    {
+      question: "Choose the correct sentence:",
+      choice1: "We is going to the park.",
+      choice2: "We are going to the park.",
+      choice3: "We am going to the park.",
+      choice4: "We be going to the park.",
+      correct: "We are going to the park."
+    },
+    {
+      question: "Choose the antonym for the word 'big':",
+      choice1: "small",
+      choice2: "tiny",
+      choice3: "little",
+      choice4: "huge",
+      correct: "small"
     }
   ];
+  
   //these variables to get score`s correct questions
   let socreArray = [];
   let score = 0;
